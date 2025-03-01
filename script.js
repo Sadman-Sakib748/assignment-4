@@ -24,7 +24,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 weekday: 'short', month: 'short', day: 'numeric', year: 'numeric'
             });
 
-            const alertMessage = `Board Updated\nTask: ${taskName}\nDate: ${dateString}\nTime: ${timeString}`;
+            const alertMessage = `Task Updated\nTask: ${taskName}\nDate: ${dateString}\nTime: ${timeString}`;
             alert(alertMessage);
             alertCount++;
 
@@ -34,7 +34,7 @@ document.addEventListener("DOMContentLoaded", () => {
             }
 
             if (alertCount >= 6) {
-                alert("you have all tusk Complete");
+                alert("You have all tusk Complete");
                 alertCount = 0; 
             }
 
