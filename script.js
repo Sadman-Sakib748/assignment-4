@@ -1,6 +1,7 @@
 document.addEventListener("DOMContentLoaded", () => {
     let taskCount = 6;
     let completedCount = 23;
+    let alertCount = 0;
     const taskCountElement = document.getElementById("task-count");
     const completedCountElement = document.getElementById("completed-count");
     const activityLogElement = document.getElementById("activity-log");
@@ -25,8 +26,16 @@ document.addEventListener("DOMContentLoaded", () => {
 
             const alertMessage = `Board Updated\nTask: ${taskName}\nDate: ${dateString}\nTime: ${timeString}`;
             alert(alertMessage);
+            alertCount++;
+
             if (taskName === "6" || taskName === "06") {
                 alert(alertMessage);
+                alertCount++;
+            }
+
+            if (alertCount >= 6) {
+                alert("Complete");
+                alertCount = 0; // Reset alert count after showing "Complete"
             }
 
             if (taskCount > 0) {
