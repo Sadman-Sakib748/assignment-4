@@ -34,7 +34,7 @@ document.addEventListener("DOMContentLoaded", () => {
             }
 
             if (alertCount >= 6) {
-                alert("Complete");
+                alert("you have all tusk Complete");
                 alertCount = 0; 
             }
 
