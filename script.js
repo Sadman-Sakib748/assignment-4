@@ -35,7 +35,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
             if (alertCount >= 6) {
                 alert("Complete");
-                alertCount = 0; // Reset alert count after showing "Complete"
+                alertCount = 0; 
             }
 
             if (taskCount > 0) {
